@@ -3,6 +3,7 @@ import math
 import time
 import keyboard
 
+#iKey = input('Press the key you want to use for drawing a circle')
 R = 200
 (x,y) = pyautogui.size()
 (X,Y) = pyautogui.position(x/2,y/2)
@@ -10,6 +11,7 @@ pyautogui.moveTo(X+R,Y)
 
 while 1:
     if keyboard.is_pressed('q'):
+    #if keyboard.is_pressed(iKey):
         time.sleep(1)
         pyautogui.moveTo(X+R,Y+42)
         pyautogui.mouseDown(button='right')
